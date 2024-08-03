@@ -17,5 +17,5 @@ cache:
 notifications:
 - provider: Email
   to:
-  - k.veneetreddy@gmail.com
+  - nerux2014@gmail.com
   on_build_failure: true

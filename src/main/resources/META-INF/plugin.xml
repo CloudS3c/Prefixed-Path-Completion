@@ -1,10 +1,10 @@
 <idea-plugin>
-    <id>com.pinkfloyded.idea-file-path-autocomplete.idea-file-path-autocomplete</id>
-    <name>File Path Autocomplete</name>
-    <vendor email="k.veneetreddy@gmail.com">PinkFloyded</vendor>
+    <id>Prefixed-Path-Completion</id>
+    <name>File Path from Keyword Direction</name>
+    <vendor email="nerux2014@gmail.com">CloudS3c</vendor>
 
     <description><![CDATA[
-    <p>Auto-completes file paths.</p>
+    <p>Auto-completes file path aimed from keyword.</p>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -17,12 +17,11 @@
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <typedHandler implementation="com.pinkfloyded.AutoPopupTypedHandler"/>
-        <completion.contributor language="any" implementationClass="com.pinkfloyded.FilePathCompletionContributor"/>
-        <completion.confidence language="any" implementationClass="com.pinkfloyded.FilePathCompletionConfidence"
+        <typedHandler implementation="com.cl0udS3c.AutoPopupTypedHandler"/>
+        <completion.contributor language="any" implementationClass="com.cl0udS3c.FilePathCompletionContributor"/>
+        <completion.confidence language="any" implementationClass="com.cl0udS3c.FilePathCompletionConfidence"
                                order="first"/>
     </extensions>
-
     <actions>
     </actions>
 </idea-plugin>
